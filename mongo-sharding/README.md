@@ -2,10 +2,16 @@
 
 ## Как запустить
 
-Запускаем mongodb и приложение
+Запускаем кластер mongodb и приложение
 
 ```shell
-docker compose up -d
+docker-compose up -d
+```
+
+Инициализируем кластер mongodb
+
+```shell
+./scripts/mongo-sharding-init.sh
 ```
 
 Заполняем mongodb данными
@@ -15,6 +21,14 @@ docker compose up -d
 ```
 
 ## Как проверить
+
+### Если хотите проверить статус балансировщика и распределение данных
+
+Запустите скрипт
+
+```shell
+./scripts/mongodb-sharding-check.sh
+```
 
 ### Если вы запускаете проект на локальной машине
 
