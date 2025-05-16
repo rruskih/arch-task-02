@@ -67,6 +67,8 @@ EOF
 
 docker-compose restart mongo-router
 
+sleep 5
+
 # Вставка тестовых данных (через mongos router):
 docker compose exec -T mongo-router mongosh --port 27020 <<EOF
 use somedb
