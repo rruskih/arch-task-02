@@ -8,13 +8,7 @@
 docker-compose up -d
 ```
 
-Инициализируем кластер mongodb
-
-```shell
-./scripts/sharding-repl-cache-init.sh
-```
-
-Заполняем mongodb данными
+Инициализируем кластер mongodb заполняем БД данными
 
 ```shell
 ./scripts/mongodb-init.sh
@@ -27,7 +21,7 @@ docker-compose up -d
 Запустите скрипт
 
 ```shell
-./scripts/sharding-repl-cache-check.sh
+./scripts/mongodb-check.sh
 ```
 
 ### Если вы запускаете проект на локальной машине
